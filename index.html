@@ -1,0 +1,610 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <title>Measurements - Converter</title>
+    <link rel="icon" type="image/png" href="images/converter-icon.png">
+    <meta http-equiv="Content-Type" content="text/html, charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+    <div id="measurements-holder">
+        <h2 id="measurements-header">Measurements Converter</h2>
+        <button id="measurement-choose">Choose Measurement</button>
+        <div class="measurements-list">
+            <ul>
+                <li>Mass</li>
+                <li>Length</li>
+                <li>Area</li>
+                <li>Volume</li>
+                <li>Temperature</li>
+                <li>Energy</li>
+                <li>Power</li>
+                <li>Pressure</li>
+                <li>Speed</li>
+                <li>Time</li>
+                <li>Data</li>
+                <li>Angle</li>
+            </ul>
+        </div>
+        <div id="mass-measurements-from">
+            <div class="measurements-from">
+                <ul>
+                    <li data-unit-symbol="T">Tones</li>
+                    <li data-unit-symbol="q">Quintals</li>
+                    <li data-unit-symbol="-">Milliagrams</li>
+                    <li data-unit-symbol="Kg">Kilograms</li>
+                    <li data-unit-symbol="Hg">Hectograms</li>
+                    <li data-unit-symbol="dag">Decagrams</li>
+                    <li data-unit-symbol="g">Grams</li>
+                    <li data-unit-symbol="dg">Decigrams</li>
+                    <li data-unit-symbol="cg">Centigrams</li>
+                    <li data-unit-symbol="mg">Milligrams</li>
+                    <li data-unit-symbol="μg">Micrograms</li>
+                    <li data-unit-symbol="Ng">Nanograms</li>
+                    <li data-unit-symbol="Pg">Picograms</li>
+                    <li data-unit-symbol="Pn">Pounds</li>
+                    <li data-unit-symbol="Onc">Ounces</li>
+                    <li data-unit-symbol="St">Stones</li>
+                </ul>
+            </div>
+        </div>
+        <div id="mass-measurements-to">
+            <div class="measurements-to">
+                <ul>
+                    <li data-unit-symbol="T">Tones</li>
+                    <li data-unit-symbol="q">Quintals</li>
+                    <li data-unit-symbol="-">Milliagrams</li>
+                    <li data-unit-symbol="Kg">Kilograms</li>
+                    <li data-unit-symbol="Hg">Hectograms</li>
+                    <li data-unit-symbol="dag">Decagrams</li>
+                    <li data-unit-symbol="g">Grams</li>
+                    <li data-unit-symbol="dg">Decigrams</li>
+                    <li data-unit-symbol="cg">Centigrams</li>
+                    <li data-unit-symbol="mg">Milligrams</li>
+                    <li data-unit-symbol="μg">Micrograms</li>
+                    <li data-unit-symbol="Ng">Nanograms</li>
+                    <li data-unit-symbol="Pg">Picograms</li>
+                    <li data-unit-symbol="Pn">Pounds</li>
+                    <li data-unit-symbol="Onc">Ounces</li>
+                    <li data-unit-symbol="St">Stones</li>
+                </ul>
+            </div>
+        </div>
+        <div id="length-measurements-from">
+            <div class="measurements-from">
+                <ul>
+                    <li data-unit-symbol="Em">Exameters</li>
+                    <li data-unit-symbol="Pm">Petameters</li>
+                    <li data-unit-symbol="Tm">Terameters</li>
+                    <li data-unit-symbol="Gm">Gigameters</li>
+                    <li data-unit-symbol="Mm">Megameters</li>
+                    <li data-unit-symbol="nM">Nautical miles</li>
+                    <li data-unit-symbol="M">Miles</li>
+                    <li data-unit-symbol="Km">Kilometers</li>
+                    <li data-unit-symbol="Hm">Hectometers</li>
+                    <li data-unit-symbol="Dam">Decameters</li>
+                    <li data-unit-symbol="m">Meters</li>
+                    <li data-unit-symbol="yd">Yards</li>
+                    <li data-unit-symbol="ft">Feet</li>
+                    <li data-unit-symbol="Dm">Decimeters</li>
+                    <li data-unit-symbol="in">Inches</li>
+                    <li data-unit-symbol="Cm">Centimeters</li>
+                    <li data-unit-symbol="mm">Millimeters</li>
+                    <li data-unit-symbol="μm">Micrometers</li>
+                    <li data-unit-symbol="Nm">Nanometers</li>
+                    <li data-unit-symbol="Pm">Picometers</li>
+                    <li data-unit-symbol="Fm">Femtometers</li>
+                    <li data-unit-symbol="Am">Attometers</li>
+                </ul>
+            </div>
+        </div>
+        <div id="length-measurements-to">
+            <div class="measurements-to">
+                <ul>
+                    <li data-unit-symbol="Em">Exameters</li>
+                    <li data-unit-symbol="Pm">Petameters</li>
+                    <li data-unit-symbol="Tm">Terameters</li>
+                    <li data-unit-symbol="Gm">Gigameters</li>
+                    <li data-unit-symbol="Mm">Megameters</li>
+                    <li data-unit-symbol="nM">Nautical miles</li>
+                    <li data-unit-symbol="M">Miles</li>
+                    <li data-unit-symbol="Km">Kilometers</li>
+                    <li data-unit-symbol="Hm">Hectometers</li>
+                    <li data-unit-symbol="Dam">Decameters</li>
+                    <li data-unit-symbol="m">Meters</li>
+                    <li data-unit-symbol="yd">Yards</li>
+                    <li data-unit-symbol="ft">Feet</li>
+                    <li data-unit-symbol="Dm">Decimeters</li>
+                    <li data-unit-symbol="in">Inches</li>
+                    <li data-unit-symbol="Cm">Centimeters</li>
+                    <li data-unit-symbol="mm">Millimeters</li>
+                    <li data-unit-symbol="μm">Micrometers</li>
+                    <li data-unit-symbol="Nm">Nanometers</li>
+                    <li data-unit-symbol="Pm">Picometers</li>
+                    <li data-unit-symbol="Fm">Femtometers</li>
+                    <li data-unit-symbol="Am">Attometers</li>
+                </ul>
+            </div>
+        </div>
+        <div id="area-measurements-from">
+            <div class="measurements-from">
+                <ul>
+                    <li data-unit-symbol="Em">(Exa) -- Em<sup>2</sup></li>
+                    <li data-unit-symbol="Pm">(Peta) -- Pm<sup>2</sup></li>
+                    <li data-unit-symbol="Tm">(Tera) -- Tm<sup>2</sup></li>
+                    <li data-unit-symbol="Gm">(Giga) -- Gm<sup>2</sup></li>
+                    <li data-unit-symbol="Mm">(Mega) -- Mm<sup>2</sup></li>
+                    <li data-unit-symbol="sM">Square miles</li>
+                    <li data-unit-symbol="Km">Km<sup>2</sup></li>
+                    <li data-unit-symbol="ac">Acres</li>
+                    <li data-unit-symbol="Hm">Hm<sup>2</sup> (Hectares)</li>
+                    <li data-unit-symbol="Dam">Dam<sup>2</sup> (Ares)</li>
+                    <li data-unit-symbol="m">m<sup>2</sup> (Centares)</li>
+                    <li data-unit-symbol="yd">Square yards</li>
+                    <li data-unit-symbol="Ft">Square feet</li>
+                    <li data-unit-symbol="Dm">Dm<sup>2</sup></li>
+                    <li data-unit-symbol="In">Square inches</li>
+                    <li data-unit-symbol="Cm">Cm<sup>2</sup></li>
+                    <li data-unit-symbol="mm">mm<sup>2</sup></li>
+                    <li data-unit-symbol="μm">(Micro) -- μm<sup>2</sup></li>
+                    <li data-unit-symbol="Pm">(Nano) -- Nm<sup>2</sup></li>
+                    <li data-unit-symbol="Nm">(Pico) -- Pm<sup>2</sup></li>
+                    <li data-unit-symbol="Fm">(Femto) -- Fm<sup>2</sup></li>
+                    <li data-unit-symbol="Am">(Atto) -- Am<sup>2</sup></li>
+                </ul>
+            </div>
+        </div>
+        <div id="area-measurements-to">
+            <div class="measurements-to">
+                <ul>
+                    <li data-unit-symbol="Em">(Exa) -- Em<sup>2</sup></li>
+                    <li data-unit-symbol="Pm">(Peta) -- Pm<sup>2</sup></li>
+                    <li data-unit-symbol="Tm">(Tera) -- Tm<sup>2</sup></li>
+                    <li data-unit-symbol="Gm">(Giga) -- Gm<sup>2</sup></li>
+                    <li data-unit-symbol="Mm">(Mega) -- Mm<sup>2</sup></li>
+                    <li data-unit-symbol="sM">Square miles</li>
+                    <li data-unit-symbol="Km">Km<sup>2</sup></li>
+                    <li data-unit-symbol="ac">Acres</li>
+                    <li data-unit-symbol="Hm">Hm<sup>2</sup> (Hectares)</li>
+                    <li data-unit-symbol="Dam">Dam<sup>2</sup> (Ares)</li>
+                    <li data-unit-symbol="m">m<sup>2</sup> (Centares)</li>
+                    <li data-unit-symbol="yd">Square yards</li>
+                    <li data-unit-symbol="Ft">Square feet</li>
+                    <li data-unit-symbol="Dm">Dm<sup>2</sup></li>
+                    <li data-unit-symbol="In">Square inches</li>
+                    <li data-unit-symbol="Cm">Cm<sup>2</sup></li>
+                    <li data-unit-symbol="mm">mm<sup>2</sup></li>
+                    <li data-unit-symbol="μm">(Micro) -- μm<sup>2</sup></li>
+                    <li data-unit-symbol="Pm">(Nano) -- Nm<sup>2</sup></li>
+                    <li data-unit-symbol="Nm">(Pico) -- Pm<sup>2</sup></li>
+                    <li data-unit-symbol="Fm">(Femto) -- Fm<sup>2</sup></li>
+                    <li data-unit-symbol="Am">(Atto) -- Am<sup>2</sup></li>
+                </ul>
+            </div>
+        </div>
+        <div id="volume-measurements-from">
+            <div class="measurements-from">
+                <ul>
+                    <li data-unit-symbol="Em">(Exa) -- Em<sup>3</sup></li>
+                    <li data-unit-symbol="Pm">(Peta) -- Pm<sup>3</sup></li>
+                    <li data-unit-symbol="Tm">(Tera) -- Tm<sup>2</sup></li>
+                    <li data-unit-symbol="Gm">(Giga) -- Gm<sup>3</sup></li>
+                    <li data-unit-symbol="Mm">(Mega) -- Mm<sup>3</sup></li>
+                    <li data-unit-symbol="Km">Km<sup>3</sup></li>
+                    <li data-unit-symbol="Hm">Hm<sup>3</sup></li>
+                    <li data-unit-symbol="Dam">Dam<sup>3</sup></li>
+                    <li data-unit-symbol="m">m<sup>3</sup> (Kiloliters)</li>
+                    <li>Bathtubs</li>
+                    <li data-unit-symbol="yd">Cubic yards</li>
+                    <li data-unit-symbol="Ft">Cubic feet</li>
+                    <li data-unit-symbol="Dm">Dm<sup>3</sup> (Liters)</li>
+                    <li data-unit-symbol="In">Cubic inches</li>
+                    <li data-unit-symbol="Cm">Cm<sup>3</sup> (Milliliters)</li>
+                    <li data-unit-symbol="mm">mm<sup>3</sup></li>
+                    <li data-unit-symbol="μm">(Micro) -- μm<sup>3</sup></li>
+                    <li data-unit-symbol="Pm">(Nano) -- Nm<sup>3</sup></li>
+                    <li data-unit-symbol="Nm">(Pico) -- Pm<sup>3</sup></li>
+                    <li data-unit-symbol="Fm">(Femto) -- Fm<sup>3</sup></li>
+                    <li data-unit-symbol="Am">(Atto) -- Am<sup>3</sup></li>
+                    <li>Teaspoons(US)</li>
+                    <li>Tablespoons(US)</li>
+                    <li>Fluid&nbsp;ounces(US)</li>
+                    <li>Cups (US)</li>
+                    <li>Pints (US)</li>
+                    <li>Quarts (US)</li>
+                    <li>Gallons (US)</li>
+                    <li>Teaspoons(UK)</li>
+                    <li>Tablespoons(UK)</li>
+                    <li>Fluid&nbsp;Ounces(UK)</li>
+                    <li>Pints (UK)</li>
+                    <li>Quarts (UK)</li>
+                    <li>Gallons (UK)</li>
+                </ul>
+            </div>
+        </div>
+        <div id="volume-measurements-to">
+            <div class="measurements-to">
+                <ul>
+                    <li data-unit-symbol="Em">(Exa) -- Em<sup>3</sup></li>
+                    <li data-unit-symbol="Pm">(Peta) -- Pm<sup>3</sup></li>
+                    <li data-unit-symbol="Tm">(Tera) -- Tm<sup>3</sup></li>
+                    <li data-unit-symbol="Gm">(Giga) -- Gm<sup>3</sup></li>
+                    <li data-unit-symbol="Mm">(Mega) -- Mm<sup>3</sup></li>
+                    <li data-unit-symbol="Km">Km<sup>3</sup></li>
+                    <li data-unit-symbol="Hm">Hm<sup>3</sup></li>
+                    <li data-unit-symbol="Dam">Dam<sup>3</sup></li>
+                    <li data-unit-symbol="m">m<sup>3</sup> (Kiloliters)</li>
+                    <li>Bathtubs</li>
+                    <li data-unit-symbol="yd">Cubic yards</li>
+                    <li data-unit-symbol="Ft">Cubic feet</li>
+                    <li data-unit-symbol="Dm">Dm<sup>3</sup> (Liters)</li>
+                    <li data-unit-symbol="In">Cubic inches</li>
+                    <li data-unit-symbol="Cm">Cm<sup>3</sup> (Milliliters)</li>
+                    <li data-unit-symbol="mm">mm<sup>3</sup></li>
+                    <li data-unit-symbol="μm">(Micro) -- μm<sup>3</sup></li>
+                    <li data-unit-symbol="Pm">(Nano) -- Nm<sup>3</sup></li>
+                    <li data-unit-symbol="Nm">(Pico) -- Pm<sup>3</sup></li>
+                    <li data-unit-symbol="Fm">(Femto) -- Fm<sup>3</sup></li>
+                    <li data-unit-symbol="Am">(Atto) -- Am<sup>3</sup></li>
+                    <li>Teaspoons(US)</li>
+                    <li>Tablespoons(US)</li>
+                    <li>Fluid&nbsp;ounces(US)</li>
+                    <li>Cups (US)</li>
+                    <li>Pints (US)</li>
+                    <li>Quarts (US)</li>
+                    <li>Gallons (US)</li>
+                    <li>Teaspoons(UK)</li>
+                    <li>Tablespoons(UK)</li>
+                    <li>Fluid&nbsp;Ounces(UK)</li>
+                    <li>Pints (UK)</li>
+                    <li>Quarts (UK)</li>
+                    <li>Gallons (UK)</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 1 gram = 0.00220462262185 Pounds
+        1 stone = 14 pounds
+        1 gram = 0.03527396195 ounces (1 g / 28.34952)
+         1 horsepower(mechanic) = 745.699872 watts
+         1 horsepower(electric) = 746 watts1
+         1 watt = 30 decibel-milliwatts = 0 decibel-watts -->
+        <div id="temperature-measurements-from">
+            <div class="measurements-from">
+                <ul>
+                    <li data-unit-symbol="°C">Celsius</li>
+                    <li data-unit-symbol="°K">Kelvin</li>
+                    <li data-unit-symbol="°F">Fahrenheit</li>
+                    <li data-unit-symbol="°R">Reaumur</li>
+                </ul>
+            </div>
+        </div>
+        <div id="temperature-measurements-to">
+            <div class="measurements-to">
+                <ul>
+                    <li data-unit-symbol="°C">Celsius</li>
+                    <li data-unit-symbol="°K">Kelvin</li>
+                    <li data-unit-symbol="°F">Fahrenheit</li>
+                    <li data-unit-symbol="°R">Reaumur</li>
+                </ul>
+            </div>
+        </div>
+        <div id="energy-measurements-from">
+            <div class="measurements-from">
+                <ul>
+                    <li>Electron volts</li>
+                    <li>Joules</li>
+                    <li>Kilojoules</li>
+                    <li>Thermal calories</li>
+                    <li>Food calories</li>
+                    <li>Foot-pounds</li>
+                    <li>British thermal units</li>
+                </ul>
+            </div>
+        </div>
+        <div id="energy-measurements-to">
+            <div class="measurements-to">
+                <ul>
+                    <li>Electron volts</li>
+                    <li>Joules</li>
+                    <li>Kilojoules</li>
+                    <li>Thermal calories</li>
+                    <li>Food calories</li>
+                    <li>Foot-pounds</li>
+                    <li>British thermal units</li>
+                </ul>
+            </div>
+        </div>
+        <div id="power-measurements-from">
+            <div class="measurements-from">
+                <ul>
+                    <li data-unit-symbol="GW">Gigawatts</li>
+                    <li data-unit-symbol="MW">Megawatts</li>
+                    <li data-unit-symbol="kW">Kilowatts</li>
+                    <li data-unit-symbol="hp(E)">Horsepower (Electric)</li>
+                    <li data-unit-symbol="hp(I)">Horsepower (Mechanic)</li>
+                    <li data-unit-symbol="BTU/min">BTUs/minute</li>
+                    <li data-unit-symbol="dBW">Decibel-watts</li>
+                    <li data-unit-symbol="W">Watts</li>
+                    <li data-unit-symbol="ft.lb/min">Foot-pounds/minute</li>
+                    <li data-unit-symbol="dBm">Decibel-milliwatts</li>
+                    <li data-unit-symbol="BTUit/hr">BTU/hr</li>
+                    <li data-unit-symbol="mW">Milliwatts</li>
+                    <li>Light bulbs</li>
+                </ul>
+            </div>
+        </div>
+        <div id="power-measurements-to">
+            <div class="measurements-to">
+                <ul>
+                    <li data-unit-symbol="GW">Gigawatts</li>
+                    <li data-unit-symbol="MW">Megawatts</li>
+                    <li data-unit-symbol="kW">Kilowatts</li>
+                    <li data-unit-symbol="hp(E)">Horsepower (Electric)</li>
+                    <li data-unit-symbol="hp(I)">Horsepower (Mechanic)</li>
+                    <li data-unit-symbol="BTU/min">BTUs/minute</li>
+                    <li data-unit-symbol="dBW">Decibel-watts</li>
+                    <li data-unit-symbol="W">Watts</li>
+                    <li data-unit-symbol="ft.lb/min">Foot-pounds/minute</li>
+                    <li data-unit-symbol="dBm">Decibel-milliwatts</li>
+                    <li data-unit-symbol="BTUit/hr">BTU/hr</li>
+                    <li data-unit-symbol="mW">Milliwatts</li>
+                    <li>Light bulbs</li>
+                </ul>
+            </div>
+        </div>
+        <div id="pressure-measurements-from">
+            <div class="measurements-from">
+                <ul>
+                    <li data-unit-symbol="GW">Atmospheres</li>
+                    <li data-unit-symbol="MW">Bars</li>
+                    <li data-unit-symbol="kW">Kilopascals</li>
+                    <li data-unit-symbol="hp(E)">Millimeters of mercury</li>
+                    <li data-unit-symbol="hp(I)">Pascals</li>
+                    <li data-unit-symbol="dBW">Pounds per square inch</li>
+                </ul>
+            </div>
+        </div>
+        <div id="pressure-measurements-to">
+            <div class="measurements-to">
+                <ul>
+                    <li data-unit-symbol="Atm">Atmospheres</li>
+                    <li data-unit-symbol="Bars">Bars</li>
+                    <li data-unit-symbol="Kp">Kilopascals</li>
+                    <li data-unit-symbol="M-Hg">Millimeters of mercury</li>
+                    <li data-unit-symbol="P">Pascals</li>
+                    <li data-unit-symbol="PsI">Pounds per square inch</li>
+                </ul>
+            </div>
+        </div>
+        <div id="speed-measurements-from">
+            <div class="measurements-from">
+                <ul>
+                    <li>Mach</li>
+                    <li>Knots</li>
+                    <li>Miles per hour</li>
+                    <li>Kilometers per hour</li>
+                    <li>Meters per second</li>
+                    <li>Feet per second</li>
+                    <li>Centimeters per second</li>
+                </ul>
+            </div>
+        </div>
+        <div id="speed-measurements-to">
+            <div class="measurements-to">
+                <ul>
+                    <li>Mach</li>
+                    <li>Knots</li>
+                    <li>Miles per hour</li>
+                    <li>Kilometers per hour</li>
+                    <li>Meters per second</li>
+                    <li>Feet per second</li>
+                    <li>Centimeters per second</li>
+                </ul>
+            </div>
+        </div>
+        <div id="time-measurements-from">
+            <div class="measurements-from">
+                <ul>
+                    <li>Microseconds</li>
+                    <li>Milliseconds</li>
+                    <li>Tierces</li>
+                    <li>Seconds</li>
+                    <li>Minutes</li>
+                    <li>Hours</li>
+                    <li>Days</li>
+                    <li>Weeks</li>
+                    <li>Months</li>
+                    <li>Years</li>
+                    <li>Decades</li>
+                    <li>Centuries</li>
+                    <li>Milleniums</li>
+                </ul>
+            </div>
+        </div>
+        <div id="time-measurements-to">
+            <div class="measurements-to">
+                <ul>
+                    <li>Microseconds</li>
+                    <li>Milliseconds</li>
+                    <li>Tierces</li>
+                    <li>Seconds</li>
+                    <li>Minutes</li>
+                    <li>Hours</li>
+                    <li>Days</li>
+                    <li>Weeks</li>
+                    <li>Months</li>
+                    <li>Years</li>
+                    <li>Decades</li>
+                    <li>Centuries</li>
+                    <li>Milleniums</li>
+                </ul>
+            </div>
+        </div>
+        <div id="data-measurements-from">
+            <div class="measurements-from">
+                <ul>
+                    <li>Floppy disks</li>
+                    <li>CDs</li>
+                    <li>DVDs</li>
+                    <li>Bits</li>
+                    <li>Bytes</li>
+                    <li>Kilobits</li>
+                    <li>Kibibits</li>
+                    <li>Kilobytes</li>
+                    <li>Kibibytes</li>
+                    <li>Megabits</li>
+                    <li>Mebibits</li>
+                    <li>Megabytes</li>
+                    <li>Mebibytes</li>
+                    <li>Gigabits</li>
+                    <li>Gibibits</li>
+                    <li>Gigabytes</li>
+                    <li>Gibibytes</li>
+                    <li>Terabits</li>
+                    <li>Tebibits</li>
+                    <li>Terabytes</li>
+                    <li>Tebibytes</li>
+                    <li>Petabits</li>
+                    <li>Pebibits</li>
+                    <li>Petabytes</li>
+                    <li>Pebibytes</li>
+                    <li>Exabits</li>
+                    <li>Exbibits</li>
+                    <li>Exabytes</li>
+                    <li>Exbibytes</li>
+                    <li>Zetabits</li>
+                    <li>Zebibits</li>
+                    <li>Zetabytes</li>
+                    <li>Zebibytes</li>
+                    <li>Yottabits</li>
+                    <li>Yobibits</li>
+                    <li>Yottabytes</li>
+                    <li>Yobibytes</li>
+                </ul>
+            </div>
+        </div>
+        <div id="data-measurements-to">
+            <div class="measurements-to">
+                <ul>
+                    <li>Floppy disks</li>
+                    <li>CDs</li>
+                    <li>DVDs</li>
+                    <li>Bits</li>
+                    <li>Bytes</li>
+                    <li>Kilobits</li>
+                    <li>Kibibits</li>
+                    <li>Kilobytes</li>
+                    <li>Kibibytes</li>
+                    <li>Megabits</li>
+                    <li>Mebibits</li>
+                    <li>Megabytes</li>
+                    <li>Mebibytes</li>
+                    <li>Gigabits</li>
+                    <li>Gibibits</li>
+                    <li>Gigabytes</li>
+                    <li>Gibibytes</li>
+                    <li>Terabits</li>
+                    <li>Tebibits</li>
+                    <li>Terabytes</li>
+                    <li>Tebibytes</li>
+                    <li>Petabits</li>
+                    <li>Pebibits</li>
+                    <li>Petabytes</li>
+                    <li>Pebibytes</li>
+                    <li>Exabits</li>
+                    <li>Exbibits</li>
+                    <li>Exabytes</li>
+                    <li>Exbibytes</li>
+                    <li>Zetabits</li>
+                    <li>Zebibits</li>
+                    <li>Zetabytes</li>
+                    <li>Zebibytes</li>
+                    <li>Yottabits</li>
+                    <li>Yobibits</li>
+                    <li>Yottabytes</li>
+                    <li>Yobibytes</li>
+                </ul>
+            </div>
+        </div>
+        <div id="angle-measurements-from">
+            <div class="measurements-from">
+                <ul>
+                    <li>Degrees</li>
+                    <li>Radians</li>
+                    <li>Gradians</li>
+                </ul>
+            </div>
+        </div>
+        <div id="angle-measurements-to">
+            <div class="measurements-to">
+                <ul>
+                    <li>Degrees</li>
+                    <li>Radians</li>
+                    <li>Gradians</li>
+                </ul>
+            </div>
+        </div>
+        <div id="options">
+            <button class="from-to-buttons" id="from-button">From...</button>
+            <button id="switch-button" title="Switch measurement units"><svg>
+                    <polygon points="25,10 55,10 55,6 70,12 55,18 55,15 25,15" />
+                    <polygon points="5,24 20,17 20,21 50,21 50,26 20,26 20,29 5,25" />
+                </svg></button>
+            <button class="from-to-buttons" id="to-button">To...</button>
+        </div>
+        <div class="center"><input type="number" class="value-and-result" id="from-value" min="0" maxlength="5"
+                placeholder="Value To Convert..."></div>
+        <p class="value-and-result" id="converted-value">Result...</p>
+    </div>
+    <div class="center">
+        <button id="customization-button">Customize!</button>
+    </div>
+    <p id="copyright-hint">&copy;&nbsp;Yves - Isite <span id="copyright-yr"></span>&nbsp;|&nbsp;All Rights Reserved.</p>
+    <div id="customization-pane">
+        <div id="real-customization-pane">
+            <h3>Design your page as you want!</h3>
+            <h4>Customize page background...</h4>
+            <div id="customization-images">
+                <img data-image-source="transparent" alt="page-customization-image" src="images/none-option.jpg" /><img
+                    data-image-source="images/anc-house-view.png" alt="page-customization-image"
+                    src="images/anc-house-view.png" /><img data-image-source="images/crop-well.png"
+                    src="images/crop-well.png" alt="page-customization-image" /><img
+                    data-image-source="images/even-layer.png" src="images/even-layer.png"
+                    alt="page-customization-image" /><img data-image-source="images/globe.jpg" src="images/globe.jpg"
+                    alt="page-customization-image" /><img data-image-source="images/govux.png" src="images/govux.png"
+                    alt="page-customization-image" />
+                <img data-image-source="images/mount-view.png" alt="page-customization-image"
+                    src="images/mount-view.png" /><img data-image-source="images/move.png" src="images/move.png"
+                    alt="page-customization-image" /><img data-image-source="images/whole-mount-well.png"
+                    src="images/whole-mount-well.png" alt="page-customization-image" /><img
+                    data-image-source="images/nature.png" src="images/nature.png" alt="page-customization-image" />
+            </div>
+            <h5>Choose background for your converter...</h5>
+            <div id="converter-customization-images">
+                <img data-image-source="transparent" alt="page-customization-image" src="images/none-option.jpg" /><img
+                    data-image-source="images/mount-view.png" alt="page-customization-image"
+                    src="images/mount-view.png" /><img data-image-source="images/world-map.jpg"
+                    src="images/world-map.jpg" alt="page-customization-image" /><img
+                    data-image-source="images/whole-mount-well.png" src="images/whole-mount-well.png"
+                    alt="page-customization-image" /><img data-image-source="images/move.png" src="images/move.png"
+                    alt="page-customization-image" />
+                <img data-image-source="images/nature.png" src="images/nature.png" alt="page-customization-image" /><img
+                    data-image-source="images/anc-house-view.png" alt="page-customization-image"
+                    src="images/anc-house-view.png" /><img data-image-source="images/crop-well.png"
+                    src="images/crop-well.png" alt="page-customization-image" /><img
+                    data-image-source="images/even-layer.png" src="images/even-layer.png"
+                    alt="page-customization-image" /><img data-image-source="images/globe.jpg" src="images/globe.jpg"
+                    alt="page-customization-image" /><img data-image-source="images/govux.png" src="images/govux.png"
+                    alt="page-customization-image" />
+            </div>
+            <button id="save-button">Save</button><button id="cancel-button">Cancel</button>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
